@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Музыкальный бот</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Telegram-бот для создания музыкальных ремиксов">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .box {
+      max-width: 420px;
+      width: 100%;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    h1 { margin-bottom: 12px; }
+    p { opacity: .85; }
+    button, a {
+      display: block;
+      width: 100%;
+      margin-top: 18px;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button {
+      background: #ffcc00;
+      color: #000;
+    }
+    a {
+      background: #1da1f2;
+      color: #fff;
+    }
+    footer {
+      margin-top: 24px;
+      font-size: 12px;
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>Музыкальный бот</h1>
+  <p>Загрузи трек — получи ремикс за пару минут</p>
+
+  <audio id="player" src="demo.mp3"></audio>
+  <button onclick="document.getElementById('player').play()">
+    ▶ Послушать пример
+  </button>
+
+  <a href="https://t.me/com_pos_bot" target="_blank">
+    👉 Открыть бота
+  </a>
+
+  <footer>
+    18+ • демо-трек • не является публичной офертой
+  </footer>
+</div>
+
+</body>
+</html>
