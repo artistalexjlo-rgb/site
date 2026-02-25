@@ -30,17 +30,24 @@
       line-height: 1.55;
       margin-bottom: 36px;
     }
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
     .btn {
       display: inline-block;
-      width: 100%;
+      flex: 1;
       background: #0d6efd;
       color: #fff;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       padding: 18px 0;
       border-radius: 28px;
-      margin-bottom: 40px;
+    }
+    .btn-max {
+      background: #7b2ff7;
     }
     .cow {
       width: 100%;
@@ -70,12 +77,18 @@
     <p>
       Можно и напеть мелодию, и зачитать рэпчик, огромное поле для экспериментов.
       Оживи свои стихи, сделай поздравление со своим мотивом.
-      Все в твоих руках!
+      Поможем написать стихи для песни. Доступна пробная генерация.
+      Доступно в Telegram и мессенджере Макс. Все в твоих руках!
     </p>
 
-    <a class="btn" href="https://t.me/com_pos_bot?start=src_site" target="_blank">
-      COM_POS_BOT
-    </a>
+    <div class="btn-row">
+      <a class="btn" href="https://t.me/com_pos_bot?start=src_site" target="_blank">
+        Открыть в Telegram
+      </a>
+      <a class="btn btn-max" href="https://max.ru/id253600625198_bot?start=src_site" target="_blank">
+        Открыть в Макс
+      </a>
+    </div>
 
     <img class="cow" src="cow.png" alt="Поющая корова">
   </div>
